@@ -11,7 +11,7 @@ const projectsData = [
   {
     title: "Taget Website",
     description:
-      "A website for Taget, a Web3 community focused on learning, networking, and driving innovation in DAOs.",
+      "Website for Taget Web3 community for learning, networking, and driving innovation in DAO.",
     href: "https://taget-nine.vercel.app/",
     image: "/taget.png",
     github: "https://github.com/EmmanuelUwem1/taget",
@@ -23,18 +23,18 @@ const projectsData = [
     ],
   },
   {
-    title: "Sonic Wall",
+    title: "Sonic Wall frontend",
     description:
-      "A cutting-edge dashboard for a smart contract firewall, built on Sonic",
+      "Dashboard for a smart contract firewall, built on Sonic",
     href: "https://sonic-wall-fe.vercel.app",
     image: "/sonic-wall.png",
     github: "https://github.com/EmmanuelUwem1/Sonic-wall-fe",
     stack: ["/next-icon.png", "/tailwind-icon.png", "/framer-motion-icon.png"],
   },
   {
-    title: "Nuevotek",
+    title: "Nuevotek Website",
     description:
-      "A clean and modern website for a network infrastructure company, built with Next.js and styled using Tailwind CSS. Smooth animations are powered by Framer Motion to enhance the user experience.",
+      "Website for Nuevotek solutions featuring modern design and responsive layout.",
     href: "https://www.nuevotek.ng/",
     image: "/nuevotek.png",
     github: "https://github.com/EmmanuelUwem1/nuevotek",
@@ -43,7 +43,7 @@ const projectsData = [
   {
     title: "Fraiche Restaurant App",
     description:
-      "A sleek and responsive restaurant web application built with Angular and Tailwind CSS. Featuring smooth cart management, user activity tracking, and a test Paystack integration for simulating secure checkout.",
+      "A restaurant web application featuring smooth cart management, user activity tracking, and a simulated Paystack integration for secure checkout.",
     href: "https://restaurant-app-five-beta.vercel.app/",
     image: "/fraiche.png",
     github: "https://github.com/EmmanuelUwem1/restaurant-app",
@@ -70,16 +70,16 @@ const projectsData = [
   {
     title: "Graphic-Cheff",
     description:
-      "A dynamic portfolio site built with Next.js, featuring smooth animations and interactive showcases using Framer Motion and Swiper.js.",
+      "A portfolio site built with Next.js, featuring smooth interactive showcases using Framer Motion and Swiper.js.",
     href: "https://graphic-cheff.vercel.app/",
     image: "/graphic-cheff.png",
     github: "https://github.com/EmmanuelUwem1/graphic-cheff",
     stack: ["/next-icon.png", "/tailwind-icon.png", "/framer-motion-icon.png"],
   },
   {
-    title: "Dev Emmanuel - My Portfolio ",
+    title: "EU - Portfolio ",
     description:
-      "My sleek portfolio website built with Next.js, featuring smooth animations via Framer Motion and React Marquee for an engaging user experience.",
+      "My portfolio website.",
     href: "https://dev-emmanuel.vercel.app",
     image: "/my-portfolio.png",
     github: "https://github.com/EmmanuelUwem1/Dev-Emmanuel---Portfolio-",
