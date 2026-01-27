@@ -96,9 +96,9 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       className={`
+        ${montserrat.variable}  
         ${bungeeHairline.variable}
         ${audiowide.variable}
-        ${montserrat.variable}
         ${lato.variable}
         ${funnelDisplay.variable}
         ${monoton.variable}
@@ -128,24 +128,20 @@ export default function RootLayout({ children }) {
         <link rel="manifest" href="/site.webmanifest" />
       </head>
 
-      <body className="antialiased">
+      <body
+        className={`${montserrat.className} antialiased`} 
+      >
+
         <div
           aria-hidden="true"
-          className="sr-only pointer-events-none fixed -top-[9999px]"
+          className="sr-only pointer-events-none"
           style={{
-            fontFamily: `
-              var(--font-bungee-hairline),
-              var(--font-audiowide),
-              var(--font-montserrat),
-              var(--font-lato),
-              var(--font-funnel-display),
-              var(--font-monoton),
-              var(--font-turret-road)
-            `,
-          }}
+            fontFamily: "var(--font-bungee-hairline), var(--font-monoton)",
+          }} 
         >
-          font force
+          force accents
         </div>
+
         <CustomCursor />
         <Header />
         <main className="overflow-hidden min-h-screen">{children}</main>
