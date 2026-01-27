@@ -96,7 +96,7 @@ export default function About() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
           >
-            Hello, I'm <span className="text-gradient">Emmanuel</span>
+           {` Hello, I'm`} <span className="text-gradient">Emmanuel</span>
           </motion.h1>
           <motion.p
             className="text-lg md:text-xl opacity-80 mb-6 montserrat-normal"
@@ -112,9 +112,9 @@ export default function About() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
           >
-            I love building things that matter. Whether it's developing software, 
+           {` I love building things that matter. Whether it's developing software, 
             crafting digital experiences, or exploring new technologies, I approach 
-            every challenge with curiosity and a desire to create meaningful impact.
+            every challenge with curiosity and a desire to create meaningful impact.`}
           </motion.p>
         </motion.div>
       </section>
@@ -133,9 +133,9 @@ export default function About() {
             </h2>
             <div className="card p-8 md:p-12 rounded-3xl">
               <p className="text-base md:text-lg opacity-80 leading-relaxed montserrat-normal mb-6">
-                I'm an engineer from Nigeria with a deep fascination for how technology 
+               {` I'm an engineer from Nigeria with a deep fascination for how technology 
                 can transform ideas into reality. My journey in engineering has been driven 
-                by a simple belief: <strong className="text-gradient">innovation happens when 
+                by a simple belief:`} <strong className="text-gradient">innovation happens when 
                 creativity meets technical excellence</strong>.
               </p>
               <p className="text-base md:text-lg opacity-80 leading-relaxed montserrat-normal mb-6">
@@ -201,7 +201,7 @@ export default function About() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-2xl md:text-4xl font-bold montserrat-normal mb-10 text-center">
-            What I'm <span className="text-gradient">Into</span>
+           {` What I'm`} <span className="text-gradient">Into</span>
           </h2>
           <motion.div
             variants={staggerContainer}
