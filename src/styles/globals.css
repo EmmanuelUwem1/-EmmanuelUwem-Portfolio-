@@ -44,10 +44,24 @@ html {
   scroll-behavior: smooth;
 }
 
+/* globals.css */
+
+:root {
+  --font-bungee-hairline: var(--font-bungee-hairline);
+  --font-audiowide: var(--font-audiowide);
+  --font-montserrat: var(--font-montserrat);
+  --font-lato: var(--font-lato);
+  --font-funnel-display: var(--font-funnel-display);
+  --font-monoton: var(--font-monoton);
+  --font-turret-road: var(--font-turret-road);
+}
+
+
+
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: var(--montserrat), Arial, Helvetica, sans-serif;
+  font-family: var(--font-montserrat), Arial, Helvetica, sans-serif;
   cursor: none; /* Hide the default cursor */
 }
 
@@ -123,7 +137,7 @@ main {
 }
 
 .logo {
-  font-family: var(--bungee-hairline), sans-serif;
+  font-family: var(--font-bungee-hairline), sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 1.3rem;
@@ -140,7 +154,7 @@ main {
 .nav-link {
   font-weight: 400;
   font-size: 1.1rem;
-  font-family: var(--funnel-display), sans-serif;
+  font-family: var(--font-funnel-display), sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   color: var(--foreground);
@@ -180,7 +194,7 @@ main {
 }
 
 .side-nav-link {
-  font-family: var(--audiowide), sans-serif;
+  font-family: var(--font-audiowide), sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 1.6rem;
@@ -195,7 +209,7 @@ main {
 }
 
 .font-audiowide {
-  font-family: var(--audiowide), sans-serif;
+  font-family: var(--font-audiowide), sans-serif;
   font-weight: 500;
   font-style: normal;
   color: var(--text-header);
@@ -217,13 +231,13 @@ section {
 }
 
 .montserrat-normal {
-  font-family: var(--montserrat), sans-serif;
+  font-family: var(--font-montserrat), sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
 
 .lato-regular {
-  font-family: var(--lato), sans-serif;
+  font-family: var(--font-lato), sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -234,7 +248,7 @@ section {
 }
 
 .hire {
-  font-family: var(--montserrat), sans-serif;
+  font-family: var(--font-montserrat), sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   color: white;

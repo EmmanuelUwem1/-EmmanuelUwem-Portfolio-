@@ -2,6 +2,7 @@ import "../styles/globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CustomCursor from "@/components/custum-cursor";
+
 import {
   Bungee_Hairline,
   Audiowide,
@@ -12,32 +13,54 @@ import {
   Turret_Road,
 } from "next/font/google";
 
-// Fonts
-const bungeeHairline = Bungee_Hairline({ subsets: ["latin"], weight: "400" });
-const audiowide = Audiowide({ subsets: ["latin"], weight: "400" });
+
+const bungeeHairline = Bungee_Hairline({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-bungee-hairline",
+});
+
+const audiowide = Audiowide({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-audiowide",
+});
+
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["100", "300", "400", "700", "900"],
   style: ["normal", "italic"],
+  variable: "--font-montserrat",
 });
+
 const lato = Lato({
   subsets: ["latin"],
   weight: ["100", "300", "400", "700", "900"],
   style: ["normal", "italic"],
+  variable: "--font-lato",
 });
+
 const funnelDisplay = Funnel_Display({
   subsets: ["latin"],
   weight: ["300", "400", "500", "700", "800"],
+  variable: "--font-funnel-display",
 });
-const monoton = Monoton({ subsets: ["latin"], weight: "400" });
+
+const monoton = Monoton({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-monoton",
+});
+
 const turretRoad = Turret_Road({
   subsets: ["latin"],
   weight: ["200", "300", "400", "500", "700", "800"],
+  variable: "--font-turret-road",
 });
 
-// Static metadata (this is what enables nice social previews)
+
 export const metadata = {
-  title: "Emmanuel Uwem | Software Engineerr",
+  title: "Emmanuel Uwem | Software Engineer",
   description: "Creative Software Engineer blending design and technology.",
 
   metadataBase: new URL("https://emmanueluwem1.vercel.app"),
@@ -64,17 +87,27 @@ export const metadata = {
     card: "summary_large_image",
     title: "Emmanuel Uwem | Software Engineer",
     description: "Creative Software Engineer blending design and technology.",
-    images: ["https://emmanueluwem1.vercel.app/Emmanuel Uwem.jpeg"],
+    images: ["https://emmanueluwem1.vercel.app/Emmanuel Uwem.jpeg"], 
   },
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className={`
+        ${bungeeHairline.variable}
+        ${audiowide.variable}
+        ${montserrat.variable}
+        ${lato.variable}
+        ${funnelDisplay.variable}
+        ${monoton.variable}
+        ${turretRoad.variable}
+      `}
+    >
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        {/* favicon links - keep what you had */}
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -96,17 +129,6 @@ export default function RootLayout({ children }) {
       </head>
 
       <body className="antialiased">
-        <style jsx global>{`
-          :root {
-            --bungee-hairline: ${bungeeHairline.style.fontFamily};
-            --audiowide: ${audiowide.style.fontFamily};
-            --montserrat: ${montserrat.style.fontFamily};
-            --lato: ${lato.style.fontFamily};
-            --funnel-display: ${funnelDisplay.style.fontFamily};
-            --monoton: ${monoton.style.fontFamily};
-            --turret-road: ${turretRoad.style.fontFamily};
-          }
-        `}</style>
         <CustomCursor />
         <Header />
         <main className="overflow-hidden min-h-screen">{children}</main>
