@@ -129,6 +129,23 @@ export default function RootLayout({ children }) {
       </head>
 
       <body className="antialiased">
+        <div
+          aria-hidden="true"
+          className="sr-only pointer-events-none fixed -top-[9999px]"
+          style={{
+            fontFamily: `
+              var(--font-bungee-hairline),
+              var(--font-audiowide),
+              var(--font-montserrat),
+              var(--font-lato),
+              var(--font-funnel-display),
+              var(--font-monoton),
+              var(--font-turret-road)
+            `,
+          }}
+        >
+          font force
+        </div>
         <CustomCursor />
         <Header />
         <main className="overflow-hidden min-h-screen">{children}</main>
