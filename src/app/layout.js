@@ -14,17 +14,6 @@ import {
 } from "next/font/google";
 
 
-const bungeeHairline = Bungee_Hairline({
-  subsets: ["latin"],
-  weight: "400",
-  variable: "--font-bungee-hairline",
-});
-
-const audiowide = Audiowide({
-  subsets: ["latin"],
-  weight: "400",
-  variable: "--font-audiowide",
-});
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -33,30 +22,6 @@ const montserrat = Montserrat({
   variable: "--font-montserrat",
 });
 
-const lato = Lato({
-  subsets: ["latin"],
-  weight: ["100", "300", "400", "700", "900"],
-  style: ["normal", "italic"],
-  variable: "--font-lato",
-});
-
-const funnelDisplay = Funnel_Display({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "700", "800"],
-  variable: "--font-funnel-display",
-});
-
-const monoton = Monoton({
-  subsets: ["latin"],
-  weight: "400",
-  variable: "--font-monoton",
-});
-
-const turretRoad = Turret_Road({
-  subsets: ["latin"],
-  weight: ["200", "300", "400", "500", "700", "800"],
-  variable: "--font-turret-road",
-});
 
 
 export const metadata = {
@@ -68,7 +33,7 @@ export const metadata = {
   openGraph: {
     title: "Emmanuel Uwem | Software Engineer Portfolio",
     description:
-      "Explore modern web experiences built with React, Next.js, Tailwind, and more.",
+      "Expert skills in modern web and app technologies and frameworks. Blending design and technology.",
     url: "https://emmanueluwem1.vercel.app",
     siteName: "Emmanuel Uwem Portfolio",
     images: [
@@ -86,8 +51,9 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Emmanuel Uwem | Software Engineer",
-    description: "Creative Software Engineer blending design and technology.",
-    images: ["https://emmanueluwem1.vercel.app/Emmanuel Uwem.jpeg"], 
+    description:
+      "Expert skills in modern web and app technologies and frameworks. Blending design and technology.",
+    images: ["https://emmanueluwem1.vercel.app/Emmanuel Uwem.jpeg"],
   },
 };
 
@@ -97,12 +63,7 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`
         ${montserrat.variable}  
-        ${bungeeHairline.variable}
-        ${audiowide.variable}
-        ${lato.variable}
-        ${funnelDisplay.variable}
-        ${monoton.variable}
-        ${turretRoad.variable}
+       
       `}
     >
       <head>
@@ -132,15 +93,7 @@ export default function RootLayout({ children }) {
         className={`${montserrat.className} antialiased`} 
       >
 
-        <div
-          aria-hidden="true"
-          className="sr-only pointer-events-none"
-          style={{
-            fontFamily: "var(--font-bungee-hairline), var(--font-monoton)",
-          }} 
-        >
-          force accents
-        </div>
+       
 
         <CustomCursor />
         <Header />
