@@ -33,7 +33,7 @@ export const metadata = {
   openGraph: {
     title: "Emmanuel Uwem | Software Engineer Portfolio",
     description:
-      "Expert skills in modern web and app technologies and frameworks. Blending design and technology.",
+      "Expert skills in modern web, app technologies and frameworks. Blending design and technology.",
     url: "https://emmanueluwem1.vercel.app",
     siteName: "Emmanuel Uwem Portfolio",
     images: [
@@ -52,7 +52,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Emmanuel Uwem | Software Engineer",
     description:
-      "Expert skills in modern web and app technologies and frameworks. Blending design and technology.",
+      "Expert skills in modern web, app technologies and frameworks. Blending design and technology.",
     images: ["https://emmanueluwem1.vercel.app/Emmanuel Uwem.jpeg"],
   },
 };
