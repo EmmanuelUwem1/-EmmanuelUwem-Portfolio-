@@ -45,11 +45,12 @@ function Header() {
       } flex justify-between items-center px-4 md:px-20 h-20 md:h-28 w-full fixed transition-width z-[1000]`}
     >
       <Link href={"/"}>
-        <div className="logo">
-          <span className="logo-">Emma</span>
-          <span className="logo-yellow">.</span>
-          <span className="logo-blue">Dev</span>
-        </div>
+       
+          <div className="logo align-middle">
+            <span className="logo-blue">E</span>
+            <span className="logo-yellow">U</span>
+          </div>
+      
       </Link>
       <Nav state={HamMenuIsOpen} onClick={handleNavLinkClick} />
       <div className="flex justify-center items-center gap-3 ">

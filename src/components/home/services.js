@@ -29,7 +29,7 @@ function Services() {
               delay: `${index == 0 ? 0.2 : Number(index) / 2}`,
             }}
             key={service.title}
-            className="flex flex-col w-80 sm:w-full card rounded-2xl h-96 overflow-hidden px-4 pt-4 pb-6"
+            className="flex flex-col max-w-80 sm:w-full card rounded-2xl h-96 overflow-hidden px-4 pt-4 pb-6"
           >
             <span className="relative h-[70%] opacity-80">
               <Image

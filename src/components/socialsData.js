@@ -1,24 +1,28 @@
 const socialsData = [
   {
-    title: "GitHub",
-    href: "https://github.com/EmmanuelUwem1",
-    icon: "/github.png",
+    title: "LinkedIn",
+    href: "https://www.linkedin.com/in/emmanuel-uwem-4892942b6/",
+    iconName: "Linkedin",
   },
-  // {
-  //   title: "Discord",
-  //   href: "https://discord.gg/h3v4DPU7xH",
-  //   icon: "/discord.png",
-  // },
-  { title: "X", href: "https://x.com/EmmanuelUwem8", icon: "/x.png" },
+  { 
+    title: "X", 
+    href: "https://x.com/EmmanuelUwem8", 
+    iconName: "X" 
+  },
+  {
+    title: "Gmail",
+    href: "mailto:emmanueluwem560@gmail.com",
+    iconName: "Mail",
+  },
   {
     title: "WhatsApp",
     href: "https://wa.me/message/GXR3OFBVV4U6J1",
-    icon: "/whatsapp.png",
+    iconName: "MessageCircle",
   },
   {
-    title: "LinkedIn",
-    href: "https://www.linkedin.com/in/emmanuel-uwem-4892942b6/",
-    icon: "/linkedin.png",
+    title: "GitHub",
+    href: "https://github.com/EmmanuelUwem1",
+    iconName: "Github",
   },
 ];
 export default socialsData;

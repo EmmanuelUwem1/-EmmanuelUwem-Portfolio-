@@ -69,7 +69,7 @@ function Nav(props) {
     { title: "Services", href: "#services" },
     { title: "Portfolio", href: "#portfolio" },
     { title: "Contact", href: "#contact" },
-    { title: "Blog", href: "blog" },
+    // { title: "About", href: "/about" },
   ];
 
   const desktopLinks = navlinks.slice(0, 3);
@@ -100,7 +100,7 @@ function Nav(props) {
         className={`side-nav flex justify-between ${props.state ? "open" : ""}`}
       >
         <a href="mailto: emmanueluwem560@gmail.com" className="hire">
-          Hire Me
+          Send me a mail
         </a>
         <div className="flex justify-center flex-col gap-4 sm:gap-8 lg:gap-4 relative -top-14 items-center">
           {navlinks.map((link, index) => (

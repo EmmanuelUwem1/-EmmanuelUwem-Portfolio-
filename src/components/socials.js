@@ -1,19 +1,35 @@
-import Image from "next/image";
+"use client";
+import { Linkedin, Mail, MessageCircle, Github } from "lucide-react";
+import XLogo from "./icons/XLogo";
 import socialsData from "./socialsData";
+
+const iconMap = {
+  Linkedin,
+  X: XLogo,
+  Mail,
+  MessageCircle,
+  Github,
+};
+
 function Socials() {
   const socials = socialsData.slice(0);
   return (
-    <div className="flex w-full justify-between">
-      {socials.map((social) => (
-        <a
-          href={social.href}
-          target="_blank"
-          className="flex relative h-6 w-6 overflow-hidden hover:bg-slate-800 transition-all p-4 rounded-full"
-          key={social.title}
-        >
-          <Image alt={social.title} src={social.icon} layout="fill"></Image>
-        </a>
-      ))}
+    <div className="flex w-full justify-between items-center">
+      {socials.map((social) => {
+        const IconComponent = iconMap[social.iconName];
+        return (
+          <a
+            href={social.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:opacity-50 transition-all"
+            key={social.title}
+            aria-label={social.title}
+          >
+            {IconComponent && <IconComponent size={24} strokeWidth={1.5} />}
+          </a>
+        );
+      })}
     </div>
   );
 }

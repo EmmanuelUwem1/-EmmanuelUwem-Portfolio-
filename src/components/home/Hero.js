@@ -30,11 +30,11 @@ function Hero() {
       className="hero px-4 flex flex-col items-center justify-center md:px-20 py-20 md:pt-36 b-rounded-bottom overflow-hidden relative"
       id="hero"
     >
-      <div className="flex justify-center items-center gap-2 rounded-full border border-gray-600 font-medium text-green-700 px-3 py-1 my-3 shimmer">
+      {/* <div className="flex justify-center items-center gap-2 rounded-full border border-gray-600 font-medium text-green-700 px-3 py-1 my-3 shimmer">
         {" "}
         <span className="h-2 w-2 rounded-full bg-green-700 "></span>
         Available for work
-      </div>
+      </div> */}
       <span className="">
         {nameToArray.map((text, index) => (
           <motion.span
