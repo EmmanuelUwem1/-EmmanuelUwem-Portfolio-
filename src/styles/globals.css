@@ -137,10 +137,10 @@ main {
 }
 
 .logo {
-  font-family: var(--font-bungee-hairline), sans-serif;
+  /* font-family: var(--font-bungee-hairline), sans-serif; */
   font-style: normal;
-  font-weight: 800;
-  font-size: 1.3rem;
+  font-weight: 400;
+  font-size: 1.1rem;
 }
 
 .logo-blue {
@@ -153,8 +153,8 @@ main {
 
 .nav-link {
   font-weight: 400;
-  font-size: 1.1rem;
-  font-family: var(--font-funnel-display), sans-serif;
+  font-size: 1rem;
+  /* font-family: var(--font-funnel-display), sans-serif; */
   font-optical-sizing: auto;
   font-style: normal;
   color: var(--foreground);
@@ -194,7 +194,7 @@ main {
 }
 
 .side-nav-link {
-  font-family: var(--font-audiowide), sans-serif;
+  /* font-family: var(--font-audiowide), sans-serif; */
   font-weight: 500;
   font-style: normal;
   font-size: 1.6rem;
@@ -209,8 +209,8 @@ main {
 }
 
 .font-audiowide {
-  font-family: var(--font-audiowide), sans-serif;
-  font-weight: 500;
+  /* font-family: var(--font-audiowide), sans-serif; */
+  font-weight: 600;
   font-style: normal;
   color: var(--text-header);
 }
