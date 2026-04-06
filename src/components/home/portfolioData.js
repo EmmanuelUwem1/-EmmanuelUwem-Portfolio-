@@ -1,4 +1,22 @@
 const projectsData = [
+   {
+    title: "Fidora - For Jouraling",
+    description:
+      "Mobile App for Secure Personal Journaling, Reflection & Productivity",
+    href: "https://get-fidora.vercel.app/",
+    image: "/fidora.png",
+    github: "https://github.com/EmmanuelUwem1/fidora-for-journaling",
+    stack: ["/react.png", "/expo.webp"],
+  },
+   {
+    title: "Mrfud.fun - Frontend",
+    description:
+      "Crypto Launchpad on Binance Smart Chain",
+    href: "https://mr-fud.vercel.app/",
+    image: "/mr-fud.png",
+    github: "https://github.com/EmmanuelUwem1/mr-fud",
+    stack: ["/next-icon.png", "/tailwind-icon.png", "/framer-motion-icon.png", "/express.webp"],
+  },
   {
     title: "Volunteer Hub",
     description:
@@ -8,6 +26,7 @@ const projectsData = [
     github: "https://github.com/EmmanuelUwem1/volunteer-hub",
     stack: ["/next-icon.png", "/tailwind-icon.png", "/framer-motion-icon.png"],
   },
+ 
   {
     title: "Taget Website",
     description:
@@ -29,6 +48,15 @@ const projectsData = [
     href: "https://sonic-wall-fe.vercel.app",
     image: "/sonic-wall.png",
     github: "https://github.com/EmmanuelUwem1/Sonic-wall-fe",
+    stack: ["/next-icon.png", "/tailwind-icon.png", "/framer-motion-icon.png"],
+  },
+  {
+    title: "Ocicat NFT Mint",
+    description:
+      "NFT minting dApp for Ocicat",
+    href: "https://ocicat-nft-club.vercel.app/",
+    image: "/nft-mint.png",
+    github: "https://github.com/EmmanuelUwem1/ocicat-mint",
     stack: ["/next-icon.png", "/tailwind-icon.png", "/framer-motion-icon.png"],
   },
   {
